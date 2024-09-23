@@ -1,0 +1,6 @@
+if SHIELD_CHARYBDIS_HANDWIRED
+
+config CONFIG_ZMK_KEYBOARD_NAME
+    default "charybdis_hw"
+
+endif
