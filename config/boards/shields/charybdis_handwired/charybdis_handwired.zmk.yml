@@ -1,0 +1,14 @@
+file_format: "1"
+id: charybdis
+name: Charybdis
+type: shield
+url: https://github.com/Bastardkb/Charybdis
+requires: [nrf52840_m2]
+exposes: []
+features:
+  - keys
+  - pointer
+siblings:
+  - charybdis_handwired_left
+  - charybdis_handwired_right
+  

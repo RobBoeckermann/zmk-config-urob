@@ -1,6 +1,16 @@
-if SHIELD_CHARYBDIS_HANDWIRED
+if SHIELD_CHARYBDIS_HANDWIRED_RIGHT
 
-config CONFIG_ZMK_KEYBOARD_NAME
-    default "charybdis_hw"
+config ZMK_KEYBOARD_NAME
+    default "Charybdis"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_CHARYBDIS_HANDWIRED_LEFT || SHIELD_CHARYBDIS_HANDWIRED_RIGHT
+
+config ZMK_SPLIT
+    default y
 
 endif
