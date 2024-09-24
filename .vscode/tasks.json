@@ -1,0 +1,25 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build charybdis_handwired_left",
+      "type": "shell",
+      "command": "cd app && west build --pristine -b nrf52840_m2 -- -DSHIELD=charybdis_handwired_left -DZMK_CONFIG=\"/home/rob/Repos/zmk-config-urob/config\"",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Build charybdis_handwired_right",
+      "type": "shell",
+      "command": "cd app && west build --pristine -b nrf52840_m2 -- -DSHIELD=charybdis_handwired_right -DZMK_CONFIG=\"/home/rob/Repos/zmk-config-urob/config\"",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+  ]
+}
